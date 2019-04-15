@@ -1,0 +1,51 @@
+{
+  "name": "snuzzze",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "16.8.3",
+    "react-native": "0.59.4"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.3",
+    "@babel/runtime": "7.4.3",
+    "@types/jest": "24.0.11",
+    "@types/react": "16.8.13",
+    "@types/react-native": "0.57.43",
+    "@types/react-test-renderer": "16.8.1",
+    "babel-jest": "24.7.1",
+    "eslint": "5.16.0",
+    "eslint-config-prettier": "4.1.0",
+    "eslint-plugin-prettier": "3.0.1",
+    "jest": "24.7.1",
+    "metro-react-native-babel-preset": "0.53.1",
+    "prettier": "1.17.0",
+    "pretty-quick": "1.10.0",
+    "react-native-typescript-transformer": "1.2.12",
+    "react-test-renderer": "16.8.3",
+    "typescript": "3.4.3",
+    "ts-jest": "24.0.2"
+  },
+  "jest": {
+    "cacheDirectory": ".jest/cache",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "preset": "react-native",
+    "testPathIgnorePatterns": [
+      "\\.snap$",
+      "<rootDir>/node_modules/"
+    ],
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js",
+      "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest"
+    }
+  }
+}
